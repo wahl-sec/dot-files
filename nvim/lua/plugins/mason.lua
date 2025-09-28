@@ -17,6 +17,7 @@ return {
 
 				-- python
 				"ruff",
+				"basedpyright",
 
 				-- go
 				"gopls",
