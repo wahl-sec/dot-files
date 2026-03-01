@@ -37,8 +37,8 @@ return {
 			},
 			{
 				"<leader>xD",
-				"<cmd>lua vim.diagnostic.open_float()<cr>"
-			}
+				"<cmd>lua vim.diagnostic.open_float()<cr>",
+			},
 		},
 	},
 }

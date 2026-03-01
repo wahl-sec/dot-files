@@ -20,3 +20,6 @@ vim.g.clipboard = {
 }
 
 vim.diagnostic.config({ virtual_text = true })
+
+-- required for auto-sessions plugin
+vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"

@@ -6,7 +6,7 @@ return {
 				keyboard_mode = true,
 			})
 			vim.o.mousemoveevent = true
-			vim.keymap.set('n', '<Tab>', ':EagleWin<CR>', { noremap = true, silent = true })
+			vim.keymap.set("n", "<Tab>", ":EagleWin<CR>", { noremap = true, silent = true })
 		end,
 	},
 }
