@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.keymap.set("v", "<leader>y", '"*y', { noremap = true })
+
 -- Buffer navigation and management
 vim.keymap.set("n", "<C-j>", "<cmd>bprev<cr>", { desc = "Go to Left Buffer", remap = true })
 vim.keymap.set("n", "<C-k>", "<cmd>bnext<cr>", { desc = "Go to Right Buffer", remap = true })

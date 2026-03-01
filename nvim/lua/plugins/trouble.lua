@@ -35,6 +35,10 @@ return {
 				"<cmd>Trouble qflist toggle<cr>",
 				desc = "Quickfix List (Trouble)",
 			},
+			{
+				"<leader>xD",
+				"<cmd>lua vim.diagnostic.open_float()<cr>"
+			}
 		},
 	},
 }
