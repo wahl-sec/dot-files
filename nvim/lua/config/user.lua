@@ -7,6 +7,9 @@ vim.opt.ignorecase = true
 
 vim.opt.undofile = true
 
+vim.opt.background = "dark"
+
+vim.opt.clipboard = ""
 vim.g.clipboard = {
 	name = "OSC 52",
 	copy = {
@@ -14,8 +17,12 @@ vim.g.clipboard = {
 		["*"] = require("vim.ui.clipboard.osc52").copy("*"),
 	},
 	paste = {
-		["+"] = require("vim.ui.clipboard.osc52").paste("+"),
-		["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+		-- 	["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+		-- 	["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+		-- 		['+'] = function() end,
+		-- 		['*'] = function() end,
+		['+'] = function() return { vim.fn.split(vim.fn.getreg('""'), '\n'), vim.fn.getregtype('""') } end,
+		['*'] = function() return { vim.fn.split(vim.fn.getreg('""'), '\n'), vim.fn.getregtype('""') } end,
 	},
 }
 
